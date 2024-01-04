@@ -8,10 +8,10 @@ def pascal_triangle(n):
         return []
     triangle = [[1]]
     for i in range(1, n):
-        prev_rowe = triangle[-1]
+        prev_row = triangle[-1]
         row = [1]
         for j in range(1, i):
-            row.append(prev_rowe[j-1] + prev_rowe[j])
+            row.append(prev_row[j-1] + prev_row[j])
         row.append(1)
         triangle.append(row)
     return triangle
