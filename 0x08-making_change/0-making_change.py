@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Change comes from within"""
+"""Change Always comes from within"""
 
 
 def makeChange(coins, total):
-    """fewest number of coins needed to meet total"""
+    """fewest number of coins needed to meet the total"""
     if total <= 0:
         return 0
     few = 0
